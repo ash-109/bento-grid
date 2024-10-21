@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -7,68 +7,76 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/output.css">
-  <title>Bento grid | Frontend Mentor</title>
+  <title>Bento Grid - Frontend Mentor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
 </head>
 
 <body class="bg-purple-100 w-full h-full flex items-center justify-center flex-col font-['DM Sans']">
-  <div class="container grid grid-cols-4 w-3/5 py-4 gap-6">
+  <div class="container grid  grid-cols-1 grid-rows-3 sm:grid-cols-4  w-3/5 my-20 gap-6 ">
 
-
-    <div class="bg-pink-100 rounded-xl px-6  ">
-      <h2 class="text-3xl "> Create and schedule content <span class=" text-purple-500 italic">quicker.</span></h2> 
+<div class=" col-start-1 row-start-1 row-end-4 flex flex-col justify-between gap-6 ">
+    <div class="bg-pink-100 rounded-xl px-6 py-20 h-1/2">
+      <h2 class="text-3xl font-semibold tracking-[-1.8px] leading-7 ">Create and schedule content <span class=" text-custom-purple italic">quicker.</span></h2>
       <div>
         <img src="./assets/images/illustration-create-post.webp" alt="illustration-create-post">
       </div>
     </div>
+    
+    <div class="bg-[#ffcd6a] p-6 rounded-xl h-1/2 ">
+      <h2 class="text-3xl font-semibold tracking-[-1.8px] leading-7">Write your content using AI.</h2>
+      <img src="./assets/images/illustration-ai-content.webp" alt="illustration-ai-content">
+    </div>
+</div>
 
 
-    <div class=" bg-purple-600 rounded-xl px-10  py-12 flex items-center justify-center flex-col col-start-2 col-end-4">
-      <h1 class="text-white text-5xl font-semibold text-center mb-5">Social Media <span class="text-[#ffcd6a]">10x</span> <span
-          class="italic">Faster</span> with AI</h1>
-      <img src="./assets/images/illustration-five-stars.webp" class="w-1/3" alt="">
+    <div class=" bg-custom-purple rounded-xl px-10  py-12 flex items-center justify-center flex-col col-span-2">
+      <h1 class="text-white text-5xl font-semibold text-center mb-5">Social Media <span
+          class="text-[#ffcd6a]">10x</span> <span class="italic">Faster</span> with AI</h1>
+      <img src="./assets/images/illustration-five-stars.webp" class="w-1/3" alt="illustration-five-stars">
       <p class="text-white text-sm">Over 4,000 5-star reviews</p>
     </div>
 
 
-    <div class="bg-purple-200 rounded-xl pl-6 overflow-hidden col-span-1 row-span-2 ">
-      <h2 class="text-3xl">Schedule to social media.</h2>
-      <img class="translate-x-24" src="./assets/images/illustration-schedule-posts.webp" alt="illustration-schedule-posts">
+    <div class="bg-purple-200 rounded-xl pl-6 overflow-hidden col-span-1 row-span-2 flex flex-col items-center justify-around py-8 ">
+      <h2 class="text-3xl font-semibold tracking-[-1.8px] leading-7">Schedule to social media.</h2>
+      <img class="" src="./assets/images/illustration-schedule-posts.webp"
+        alt="illustration-schedule-posts" >
       <p>Optimize post timings to publish content at the perfect time for your audience.</p>
     </div>
 
 
-    <div class="bg-[#ffcd6a] p-6 rounded-xl row-start-2 row-end-4 ">
-      <h2 class="text-3xl font-semibold tracking-tighter leading-7">Write your content using AI.</h2>
-      <img src="./assets/images/illustration-ai-content.webp" alt="">
-    </div>
-
-
-    <div class="bg-white rounded-xl">
-      <img src="./assets/images/illustration-multiple-platforms.webp" alt="">
-      <h2 class="text-3xl">Manage multiple accounts and platforms.
+    <div class="bg-white rounded-xl p-5">
+      <img src="./assets/images/illustration-multiple-platforms.webp" alt="illustration-multiple-platforms">
+      <h2 class="text-2xl font-semibold tracking-[-1.8px] leading-5 text-left pr-4">Manage multiple accounts and platforms.
       </h2>
-
     </div>
+
+
     <div class="bg-white rounded-xl p-6 row-start-3 row-end-4">
-      <h2 class="text-5xl">>56%</h2>
+      <h2 class="text-5xl font-semibold ">>56%</h2>
       <p>faster audience growth</p>
-      <img src="./assets/images/illustration-audience-growth.webp" alt="">
+      <img src="./assets/images/illustration-audience-growth.webp" alt="illustration-audience-growth">
     </div>
 
 
-    <div class="bg-[#ffcd6a] rounded-xl">
-      <h3>Maintain a consistent posting schedule.</h3>
-      <img src="./assets/images/illustration-consistent-schedule.webp" alt="">
+    <div class="bg-[#ffcd6a] rounded-xl p-5 overflow-hidden row-span-1 relative">
+      <h2 class="text-2xl font-semibold tracking-[-1.8px] leading-7">Maintain a consistent posting schedule.</h2>
+      <img src="./assets/images/illustration-consistent-schedule.webp" class="translate-y-20" alt="illustration-consistent-schedule">
     </div>
 
 
-    <div class="bg-purple-500 rounded-xl row-start-3 row-end-4 col-start-3 col-end-5 p-6 flex items-center justify-center">
-      <img src="./assets/images/illustration-grow-followers.webp" class="w-1/2" alt="">
+    <div
+      class="bg-custom-purple rounded-xl row-start-3 row-end-4 col-start-3 col-end-5 p-6 flex items-center justify-center">
+      <img src="./assets/images/illustration-grow-followers.webp" class="w-1/2" alt="illustration-grow-followers">
       <h2 class="text-white text-3xl ">Grow followers with non-stop content.</h2>
     </div>
+
+
+
   </div>
 
 
@@ -78,7 +86,7 @@
 
 
 
-<!-- 
+  <!-- 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
